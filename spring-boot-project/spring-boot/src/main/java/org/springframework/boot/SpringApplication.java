@@ -151,6 +151,15 @@ import org.springframework.web.context.support.StandardServletEnvironment;
  * @see #run(Class, String[])
  * @see #run(Class[], String[])
  * @see #SpringApplication(Class...)
+ *
+ * Spring的官网对SpringBoot有一个明确的简介，表明了Springboot是什么以及他的核心特点。
+ * 1. 最小化的应用  对SpringFramework的升级
+ * 2. 内嵌Tomcat，可以直接jar包启动
+ * 		得益于Servlet4.0提供的接口
+ * 3. 零XML,springboot中没有xml文件，只有yaml或者properties文件，
+ * 		得益于springboot对大量插件的整合例如web redis aop jdbc rabbitmq等等
+ * 4. 自动配置，尽可能的自动配置spring和第三方jar包，例如applicationContext和DispatchServlet
+ * 		得益于springboot中的核心包spring-start
  */
 public class SpringApplication {
 

@@ -226,6 +226,12 @@ public class SpringApplication {
 
 	private boolean registerShutdownHook = true;
 
+	/**
+	 * SpringFramework的ApplicationContext核心实现是 AnnotationConfigApplicationContext或者是XmlClassPathApplicationContext
+	 * SpringMVC持有的ApplicationContext核心实现是 WebServerApplicationContext，它是不知道用注解还是xml进行处理环境的。
+	 * SpringBoot实现ApplicationContext的就太对了，当环境有web时候，返回的是AnnotationConfigWebServerApplicationContext
+	 * 											当环境没有web时候，返回的是AnnotationConfigApplicationContext
+	 */
 	private List<ApplicationContextInitializer<?>> initializers;
 
 	private List<ApplicationListener<?>> listeners;

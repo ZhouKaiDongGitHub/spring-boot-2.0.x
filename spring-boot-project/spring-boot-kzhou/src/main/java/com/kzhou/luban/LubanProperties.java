@@ -2,7 +2,7 @@
 package com.kzhou.luban;
 
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
+//import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * 		EnableAutoConfiguration 配置文件中取的
  */
 @Component
-@ConfigurationProperties(prefix = "luban", ignoreUnknownFields = true)
+//@ConfigurationProperties(prefix = "luban", ignoreUnknownFields = true)
 public class LubanProperties {
 	private String name;
 	private int age;
